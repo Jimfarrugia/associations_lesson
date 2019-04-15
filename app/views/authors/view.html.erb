@@ -1,0 +1,11 @@
+<h1>Author Details</h1>
+
+<h2>
+  <%= @author.name %>
+</h2>
+
+<% if @author.date_of_birth %>
+  <p>
+    Born: <%= @author.date_of_birth %>
+  </p>
+<% end %>

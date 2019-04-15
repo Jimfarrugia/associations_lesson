@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/authors', to: 'authors#index', as: 'authors_index'
   get '/authors/new', to: 'authors#new', as: 'authors_new'
   post '/authors/create', to: 'authors#create', as: 'authors_create'
+  get '/authors/:id', to: 'authors#view'
 end

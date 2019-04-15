@@ -16,6 +16,9 @@ class AuthorsController < ApplicationController
     redirect_to authors_index_path
   end
 
+  def view
+    @author = Author.find(params[:id])
+  end
 
-  
+
 end
