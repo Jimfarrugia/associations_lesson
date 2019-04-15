@@ -8,6 +8,12 @@ class AuthorsController < ApplicationController
   end
 
   def create
+    p params
 
+    author = Author.new
+    author.name = params[:name]
+    author.save
+    
+    redirect_to authors_index_path
   end
 end
