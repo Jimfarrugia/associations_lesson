@@ -4,6 +4,9 @@
   <p>
     <%= label_tag(:name, "Author's Name") %>
     <%= text_field_tag(:name) %>
+    <br>
+    <%= label_tag(:date_of_birth, "Date of Birth") %>
+    <%= date_field(:author, :date_of_birth) %>
   </p>
   <p>
     <%= submit_tag("Add Author") %>
